@@ -1,0 +1,12 @@
+%article.video
+  .container
+    .row
+      .col-sm-7.col-sm-offset-1
+        = image_tag @video.large_cover_url
+      .video_info.col-sm-3
+        %header
+          %h3= @video.title
+        %p= @video.description
+        .actions
+        %a.btn.btn-primary(href="") Watch This Video Now
+        %a.btn.btn-default(href="") + My Queue
