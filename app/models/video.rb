@@ -1,3 +1,3 @@
 class Video < ActiveRecord::Base
-	has_many :videos
+	belongs_to :category
 end
