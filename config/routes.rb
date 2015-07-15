@@ -6,7 +6,8 @@ Myflix::Application.routes.draw do
   	end
   end
   get 'ui(/:action)', controller: 'ui'
-  #get 'home', to: 'videos#index'
-  #get 'video', to: 'videos#show'
-  #resources :categories, only: :show
+  #The routes below were used prior to Kevin's video search
+  get 'home', to: 'videos#index'
+  get 'video', to: 'videos#show'
+  resources :categories, only: :show
 end
